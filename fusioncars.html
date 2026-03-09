@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Cars | Buy Best Pre-Owned Luxury Cars in New Delhi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --luxury-gold: #FFC107;
+            --deep-black: #000000;
+            --platinum-grey: #F5F5F5;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--deep-black);
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        .luxury-heading {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #FFC107 0%, #FFD54F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-nav {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .inventory-card:hover .card-overlay {
+            opacity: 1;
+        }
+
+        .sticky-cta {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 50;
+        }
+
+        .search-shadow {
+            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-black">
+
+    <!-- Navigation Bar -->
+    <nav class="glass-nav fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold tracking-tighter luxury-heading">FUSION<span class="text-[#FFC107]">CARS</span></span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center text-sm font-medium tracking-wide uppercase">
+                    <a href="#" class="hover:text-[#FFC107] transition">Home</a>
+                    <a href="#inventory" class="hover:text-[#FFC107] transition">Inventory</a>
+                    <a href="#about" class="hover:text-[#FFC107] transition">About Us</a>
+                    <a href="#" class="hover:text-[#FFC107] transition">Sell Your Car</a>
+                    <a href="#" class="hover:text-[#FFC107] transition">Finance</a>
+                    <a href="#contact" class="hover:text-[#FFC107] transition">Contact</a>
+                    <button class="bg-[#FFC107] text-black px-6 py-2 rounded-full font-bold hover:bg-white transition flex items-center gap-2">
+                        <i class="fas fa-search text-xs"></i> SEARCH CARS
+                    </button>
+                </div>
+
+                <div class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Slider Style) -->
+    <section class="relative h-screen flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=2000" alt="Luxury Car" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+            <p class="text-[#FFC107] font-semibold tracking-[0.3em] mb-4 text-sm animate-fade-in">15+ YEARS OF EXCELLENCE</p>
+            <h1 class="luxury-heading text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Buy Best Pre-Owned <br> 
+                <span class="gold-gradient">Luxury Cars</span> in New Delhi
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
+                Transparent Dealing. Rigorous Testing. The Gold Standard for pre-owned luxury vehicles since 2008.
+            </p>
+
+            <!-- Cars24 Inspired Hub Search -->
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl p-2 sm:p-4 search-shadow flex flex-col md:flex-row gap-2">
+                <div class="flex-1 flex items-center px-4 border-b md:border-b-0 md:border-r border-gray-100 py-3">
+                    <i class="fas fa-car text-gray-400 mr-3"></i>
+                    <select class="w-full text-black outline-none bg-transparent appearance-none cursor-pointer">
+                        <option>All Brands (Mercedes, BMW, Audi...)</option>
+                        <option>Mercedes-Benz</option>
+                        <option>BMW</option>
+                        <option>Bentley</option>
+                    </select>
+                </div>
+                <div class="flex-1 flex items-center px-4 py-3">
+                    <i class="fas fa-indian-rupee-sign text-gray-400 mr-3"></i>
+                    <select class="w-full text-black outline-none bg-transparent appearance-none cursor-pointer">
+                        <option>Select Budget Range</option>
+                        <option>Under 50 Lakhs</option>
+                        <option>50 Lakhs - 1 Crore</option>
+                        <option>1 Crore +</option>
+                    </select>
+                </div>
+                <button class="bg-black text-[#FFC107] px-10 py-4 rounded-xl font-bold hover:bg-[#FFC107] hover:text-black transition uppercase tracking-wider">
+                    Show Inventory
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confidence Blocks (Achievements & Trust) -->
+    <section class="py-20 bg-white text-black">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2">15+</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest">Years Experience</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">5000+</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest">Happy Clients</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">25+</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest">Quality Awards</div>
+                </div>
+                <div>
+                    <div class="flex justify-center gap-1 text-[#FFC107] text-xl mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest">4.4 Google Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Fusion Advantage -->
+    <section class="py-24 bg-[#F5F5F5] text-black overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2 relative">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#FFC107] opacity-20 rounded-full blur-3xl"></div>
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=1000" alt="Luxury Interior" class="rounded-3xl shadow-2xl relative z-10">
+                    <div class="absolute -bottom-6 -right-6 bg-black text-white p-8 rounded-2xl z-20 hidden md:block">
+                        <p class="text-3xl font-bold text-[#FFC107]">100%</p>
+                        <p class="text-xs uppercase tracking-tighter">Customer Satisfaction</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="luxury-heading text-4xl font-bold mb-8">The Fusion Advantage</h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#FFC107] shadow-md shrink-0">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Rigorous Testing</h4>
+                                <p class="text-gray-600">Every vehicle undergoes multi-point quality checks by certified experts before entering our stock.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#FFC107] shadow-md shrink-0">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Hassle-free Paperwork</h4>
+                                <p class="text-gray-600">Transparent ownership transfers and smooth documentation handled entirely by our dedicated team.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#FFC107] shadow-md shrink-0">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Celebrity Endorsed</h4>
+                                <p class="text-gray-600">Felicitated by icons like Parineeti Chopra and Sonali Bendre for our contribution to luxury auto retail.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section id="inventory" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <p class="text-[#FFC107] tracking-widest text-sm mb-2 uppercase">Our Collection</p>
+                    <h2 class="luxury-heading text-4xl font-bold">Featured Inventory</h2>
+                </div>
+                <a href="#" class="text-gray-400 hover:text-white transition hidden sm:block">View All Stock <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Car Item 1 -->
+                <div class="bg-zinc-900 rounded-2xl overflow-hidden group hover:shadow-[0_0_30px_rgba(255,193,7,0.15)] transition-all">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" alt="Car" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-[#FFC107] text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase">1st Owner</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">2023 BMW X5 xDrive40i</h3>
+                        <div class="grid grid-cols-2 gap-4 text-xs text-gray-400 mb-6">
+                            <div class="flex items-center gap-2"><i class="fas fa-gas-pump"></i> Petrol</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-tachometer-alt"></i> 12,500 KM</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-calendar"></i> Reg. 2023</div>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-zinc-800">
+                            <span class="text-2xl font-bold">₹ 98.50 Lakh</span>
+                            <button class="text-[#FFC107] font-bold text-sm hover:underline">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Item 2 -->
+                <div class="bg-zinc-900 rounded-2xl overflow-hidden group hover:shadow-[0_0_30px_rgba(255,193,7,0.15)] transition-all">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" alt="Car" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-white text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase">Sold</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">2022 Mercedes-Benz G-Wagon</h3>
+                        <div class="grid grid-cols-2 gap-4 text-xs text-gray-400 mb-6">
+                            <div class="flex items-center gap-2"><i class="fas fa-gas-pump"></i> Diesel</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-tachometer-alt"></i> 8,200 KM</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-calendar"></i> Reg. 2022</div>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-zinc-800">
+                            <span class="text-2xl font-bold italic opacity-50">Request Price</span>
+                            <button class="bg-[#FFC107] text-black px-4 py-2 rounded-lg text-sm font-bold">Contact Expert</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Item 3 -->
+                <div class="bg-zinc-900 rounded-2xl overflow-hidden group hover:shadow-[0_0_30px_rgba(255,193,7,0.15)] transition-all">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=800" alt="Car" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-[#FFC107] text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase">New Arrival</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">2021 Audi Q8 Celebration</h3>
+                        <div class="grid grid-cols-2 gap-4 text-xs text-gray-400 mb-6">
+                            <div class="flex items-center gap-2"><i class="fas fa-gas-pump"></i> Hybrid</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-tachometer-alt"></i> 22,000 KM</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-calendar"></i> Reg. 2021</div>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-zinc-800">
+                            <span class="text-2xl font-bold">₹ 82.00 Lakh</span>
+                            <button class="text-[#FFC107] font-bold text-sm hover:underline">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-[#F5F5F5] text-black">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="luxury-heading text-4xl font-bold mb-16">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-[#FFC107] mb-4"><i class="fas fa-quote-left text-2xl"></i></div>
+                    <p class="text-gray-600 italic mb-6">"The premium experience at Fusion Cars is unmatched. Professionalism and quality of stock are their best traits."</p>
+                    <div class="font-bold">Rahul Sharma</div>
+                    <div class="text-xs text-gray-400">Verified Google Review</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-[#FFC107] mb-4"><i class="fas fa-quote-left text-2xl"></i></div>
+                    <p class="text-gray-600 italic mb-6">"Smooth paperwork and 100% transparency. They made buying my first luxury car a breeze. Highly recommended!"</p>
+                    <div class="font-bold">Ananya Verma</div>
+                    <div class="text-xs text-gray-400">Verified JustDial Review</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-[#FFC107] mb-4"><i class="fas fa-quote-left text-2xl"></i></div>
+                    <p class="text-gray-600 italic mb-6">"True to their word. The car was exactly as described. The testing reports provided massive peace of mind."</p>
+                    <div class="font-bold">Vikram Malhotra</div>
+                    <div class="text-xs text-gray-400">Verified Google Review</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-black pt-20 pb-10 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <h4 class="luxury-heading text-2xl font-bold mb-6">FUSION<span class="text-[#FFC107]">CARS</span></h4>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        The ultimate destination for pre-owned luxury cars in New Delhi. Quality, transparency, and prestige delivered since 2008.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 border border-zinc-700 rounded-full flex items-center justify-center hover:bg-[#FFC107] hover:text-black transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 border border-zinc-700 rounded-full flex items-center justify-center hover:bg-[#FFC107] hover:text-black transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 border border-zinc-700 rounded-full flex items-center justify-center hover:bg-[#FFC107] hover:text-black transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h5 class="font-bold mb-6 uppercase tracking-widest text-xs">Quick Links</h5>
+                    <ul class="space-y-4 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Current Inventory</a></li>
+                        <li><a href="#" class="hover:text-white transition">Sell Your Car</a></li>
+                        <li><a href="#" class="hover:text-white transition">Finance Options</a></li>
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold mb-6 uppercase tracking-widest text-xs">Visit Us</h5>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        A-99/100, Ganesh Nagar,<br>
+                        Tilak Nagar, Delhi-110018
+                    </p>
+                    <p class="text-sm text-gray-500 mt-4">
+                        <span class="block font-bold text-white mb-1 uppercase text-[10px]">Hours</span>
+                        Mon-Sun: 10:00 AM - 8:00 PM
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="font-bold mb-6 uppercase tracking-widest text-xs">Contact</h5>
+                    <p class="text-2xl font-bold text-[#FFC107] mb-2">+91 98XXX XXXXX</p>
+                    <p class="text-sm text-gray-500 mb-6">info@fusioncars.in</p>
+                    <button class="w-full bg-zinc-900 py-3 rounded-lg border border-zinc-800 text-sm font-bold hover:bg-white hover:text-black transition">
+                        Enquire Now
+                    </button>
+                </div>
+            </div>
+            
+            <div class="pt-10 border-t border-zinc-900 text-center text-[10px] text-gray-600 uppercase tracking-[0.2em]">
+                &copy; 2024 Fusion Cars. All rights reserved. | Design Inspired by Radical Transparency.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Contact CTA -->
+    <div class="sticky-cta">
+        <a href="https://wa.me/9198XXXXXXXX" class="bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-4');
+                nav.style.background = 'rgba(0,0,0,0.95)';
+            } else {
+                nav.classList.remove('py-4');
+                nav.style.background = 'rgba(0,0,0,0.8)';
+            }
+        });
+    </script>
+</body>
+</html>
